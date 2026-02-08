@@ -69,7 +69,7 @@
 /* SEARCH PAGE */
 .search-page {
     padding: 40px;
-    background-color: #e7fcf1;
+    background-color: #e7f9f0;
 }
 
 /* SEARCH BOX BACKGROUND IMAGE */
@@ -175,7 +175,8 @@
 
 /* SUB-CATEGORIES SECTION */
 .subcategories-section {
-    background-color: #e7fcf1;
+    background-color: #e7f9f0;
+    padding-top: 20px;
 }
 
 .subcategories {
@@ -187,7 +188,7 @@
 .subcategories-title {
     padding-left: 50px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -225,8 +226,14 @@
     border-radius: 5px;
     width: 90%;
     height: 90%;
-    text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .closeBtn {
@@ -265,3 +272,5 @@
     font-weight: 700;
     color: #1f7a4f;
 }
+
+
