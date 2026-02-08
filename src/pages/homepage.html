@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>Archer's Freelance Hub</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <img src="../../images/logo.png" alt="Logo" class="logo-img">
+            <h1 class="logo-text">Archer's Freelance Hub</h1>
+        </div>
+
+        <div class="header-right">
+            <button class="logout-btn">Log out</button>
+            <div class="profile-icon">
+                <img src="../../images/profile.jpg" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SEARCH BOX -->
+        <section class="search-page">
+            <div class="search-box-image">
+                <p class="image-text">Where DLSU talents</p>
+                <p class="image-text">meets real-world opportunities</p>
+
+                <div class="search-container">
+                    <input type="text" placeholder="Find services or freelancers...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLORE CATEGORIES -->
+        <section class="categories-section">
+            <h1 class="categories-title">Explore categories</h1>
+
+            <div class="categories-buttons">
+                <button class="category-btn">Visual arts</button>
+                <button class="category-btn">Academic help</button>
+                <button class="category-btn">Video editing</button>
+                <button class="category-btn">Category</button>
+            </div>
+        </section>
+
+        <!-- SUBCATEGORIES -->
+        <section class="subcategories-section">
+
+            <h3 class="subcategories-title">Visual Arts</h3>
+
+            <div class="subcategories-images">
+
+                <div class="subcat-container" onclick="openPopup()">
+                    <img src="../../images/sample1.jpg" alt="Project Sample 1">
+                    <p class="project-name">Project by Name</p>
+                    <p class="project-price">$99.99</p>
+                </div>
+
+                <div class="subcat-container" onclick="openPopup()">
+                    <img src="../../images/sample2.jpg" alt="Project Sample 2">
+                    <p class="project-name">Project by Name</p>
+                    <p class="project-price">$99.99</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- POPUP OUTSIDE SECTION (Cleaner) -->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+
+            <div class="img-container">
+                <img src="../../images/sample1.jpg" alt="Project Sample 1">
+                <h3>Image Caption</h3>
+            </div>
+
+            <div class="details-container">
+                <h2>Test Popup</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nullam quis sodales lectus, vitae lobortis diam.
+                </p>
+            </div>
+
+            <div class="closeBtn-container">
+                <button class="closeBtn" onclick="closePopup()">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/homepage.js"></script>
+
+</body>
+
+</html>
