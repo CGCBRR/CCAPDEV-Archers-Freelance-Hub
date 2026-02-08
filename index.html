@@ -52,28 +52,31 @@
                     </div>
             </section>
 
-            <section>
-                <h3 class="subcategories-title">Visual Arts</h3>
-                <div class="subcategories-images">
-                    <div class="subcat-container" onclick="openPopup()">
-                        <img src="images/sample1.jpg" alt="Project Sample 1">
-                        <p class="project-name">Project by Name</p>
-                        <p>$99.99</p>
-                    </div>
-                    
-                    <div class="overlay" id="overlay">
-                        <div class="popup">
-                            <h2>Test Popup</h2>
-                            <button class="closeBtn" onclick="closePopup()">Close</button>
+            <section class="subcategories-section">
+                <div class="subcategories"></div>
+                    <h3 class="subcategories-title">Visual Arts</h3>
+                    <div class="subcategories-images">
+                        <div class="subcat-container" onclick="openPopup()">
+                            <img src="images/sample1.jpg" alt="Project Sample 1">
+                            <p class="project-name">Project by Name</p>
+                            <p class="project-price">$99.99</p>
+                        </div>
+
+                        <div class="subcat-container" onclick="openPopup()">
+                            <img src="images/sample2.jpg" alt="Project Sample 2">
+                            <p class="project-name">Project by Name</p>
+                            <p class="project-price">$99.99</p>
+                        </div>
+
+                        <!-- Popup Box -->
+                        <div class="overlay" id="overlay">
+                            <div class="popup">
+                                <h2>Test Popup</h2>
+                                <button class="closeBtn" onclick="closePopup()">Close</button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="subcat-container" onclick="openPopup()">
-                        <img src="images/sample2.jpg" alt="Project Sample 2">
-                        <p class="project-name">Project by Name</p>
-                        <p>$99.99</p>
-                    </div>
-                </div>
+                </div>    
             </section> 
         </main>
         <script src="script.js"></script>
