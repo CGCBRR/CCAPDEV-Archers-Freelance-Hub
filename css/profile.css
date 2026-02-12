@@ -186,3 +186,12 @@
 .post-cat-name {
     margin-bottom: 20px;
 }
+
+.post-review {
+    font-weight: bold;
+    color: rgb(119, 115, 115);
+}
+
+.post-price {
+    color: rgb(121, 153, 121);
+}
