@@ -15,7 +15,7 @@
         </div>
 
         <div class="header-right">
-            <button class="logout-btn">Log out</button>
+            <button class="logout-btn" onClick="window.location.href='loginpage.html'">Log out</button>
             <div class="profile-icon">
                 <img src="../../images/profile.jpg" alt="Profile">
             </div>
@@ -51,63 +51,66 @@
 
         <!-- SUBCATEGORIES -->
         <section class="subcategories-section">
-
-            <h3 class="subcategories-title">Visual Arts</h3>
-            <ul>
-                <li>
-                    <div class="card" onclick="openPopup()">
-                        <div class="card-header">
-                            <div class="card-user-info">
-                                <div class="profile-icon">
-                                    <img src="../../images/profile2.jpg" alt="Project Sample 1">
+            <div class="sucategories-div">
+                <h3 class="subcategories-title">Visual Arts</h3>
+                <ul>
+                    <li>
+                        <div class="card" onclick="openPopup()">
+                            <div class="card-header">
+                                <div class="card-user-info">
+                                    <a href="profile.html">
+                                        <div class="profile-icon">
+                                            <img src="../../images/profile2.jpg" alt="Project Sample 1">
+                                        </div>
+                                    </a>
+                                    <div class="user-details">
+                                        <p class="user-name">Carlos Barring</p>
+                                        <p class="user-year">ID125 | 1st Year</p>
+                                    </div>
                                 </div>
-                                <div class="user-details">
-                                    <p class="user-name">Carlos Barring</p>
-                                    <p class="user-year">ID125 | 1st Year</p>
+                                <div class="card-buttons">
+                                    <button class="message-btn">Contact</button>
+                                    <button class="hire-btn" onclick="openPopup()">Hire</button>
                                 </div>
                             </div>
-                            <div class="card-buttons">
-                                <button class="message-btn">Contact</button>
-                                <button class="hire-btn" onclick="openPopup()">Hire</button>
+
+                            <div class="card-subheader">
+                                <div class="user-credentials">
+                                    <div class="value-details">
+                                        <p class="credentials-value">$99.99</p>
+                                        <p class="credentials-title">Earned</p>
+                                    </div>
+                                    <div class="value-details">
+                                        <p class="credentials-value">X25</p>
+                                        <p class="credentials-title">Completed</p>
+                                    </div>
+                                    <div class="value-details">
+                                        <p class="credentials-value">5.0</p>
+                                        <p class="credentials-title">Rating</p>
+                                    </div>
+                                    <div class="sub-category">
+                                        <p class="project-subcategory">Visual Arts</p>
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <p class="project-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Nullam quis sodales lectus, vitae lobortis diam.
+                                </p>
+                            </div>
+
+                            <div class="card-images">
+                                <img src="../../images/sample1.jpg" alt="Project Sample 1">
+                                <img src="../../images/sample2.jpg" alt="Project Sample 2">
+                                <img src="../../images/sample3.jpeg" alt="Project Sample 3">
+                                <img src="../../images/sample4.jpg" alt="Project Sample 4">
                             </div>
                         </div>
-
-                        <div class="card-subheader">
-                            <div class="user-credentials">
-                                <div class="value-details">
-                                    <p class="credentials-value">$99.99</p>
-                                    <p class="credentials-title">Earned</p>
-                                </div>
-                                <div class="value-details">
-                                    <p class="credentials-value">X25</p>
-                                    <p class="credentials-title">Completed</p>
-                                </div>
-                                <div class="value-details">
-                                    <p class="credentials-value">5.0</p>
-                                    <p class="credentials-title">Rating</p>
-                                </div>
-                                <div class="sub-category">
-                                    <p class="project-subcategory">Visual Arts</p>
-                                </div>  
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nullam quis sodales lectus, vitae lobortis diam.
-                            </p>
-                        </div>
-
-                        <div class="card-images">
-                            <img src="../../images/sample1.jpg" alt="Project Sample 1">
-                            <img src="../../images/sample2.jpg" alt="Project Sample 2">
-                            <img src="../../images/sample3.jpeg" alt="Project Sample 3">
-                            <img src="../../images/sample4.jpg" alt="Project Sample 4">
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>

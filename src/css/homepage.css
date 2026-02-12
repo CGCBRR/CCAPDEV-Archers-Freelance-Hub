@@ -76,7 +76,6 @@
 
 .search-page {
     padding: 40px;
-    background-image: url("../../images/hero-image.png");
 }
 
 /* IMPORTANT: CSS is in src/css so go UP to root then images */
@@ -87,6 +86,7 @@
     background-position: center;
     border-radius: 16px;
     overflow: hidden;
+    background-image: url("../../images/hero-image.png");
 }
 
 /* HERO TEXT */
@@ -189,6 +189,11 @@
     padding: 30px 40px;
 }
 
+.sucategories-div {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 .subcategories-title {
     font-size: 25px;
     font-weight: 700;
@@ -201,7 +206,6 @@
     gap: 20px;
     flex-wrap: wrap;
 }
-
 
 
 
