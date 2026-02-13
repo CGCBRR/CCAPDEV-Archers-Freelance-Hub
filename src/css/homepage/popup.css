@@ -1,0 +1,205 @@
+/* ========== POPUP.CSS ========== */
+/* Modal/Popup overlay and content */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: var(--white);
+    border-radius: var(--radius-xxl);
+    width: 90%;
+    max-width: 1000px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    animation: scaleIn 0.3s ease;
+}
+
+/* Close Button */
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-circle);
+    background: var(--gray-100);
+    color: var(--gray-600);
+    font-size: 24px;
+    font-weight: 500;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.closeBtn:hover {
+    background: var(--green-primary);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+/* Popup Content */
+.popup-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+    padding: var(--space-10);
+}
+
+/* Gallery Section */
+.popup-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.popup-main-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+}
+
+.popup-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+}
+
+.popup-thumbnails img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-fast);
+}
+
+.popup-thumbnails img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+/* Details Section */
+.popup-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.popup-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--green-primary);
+}
+
+/* User Info in Popup */
+.popup-user {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.popup-user img {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-circle);
+    object-fit: cover;
+}
+
+.popup-user h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-1);
+}
+
+.popup-user p {
+    color: var(--text-tertiary);
+    font-size: 14px;
+}
+
+/* Description */
+.popup-description h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.popup-description p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Meta Information */
+.popup-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-1);
+}
+
+.meta-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Hire Button */
+.popup-hire-btn {
+    padding: 18px;
+    background: var(--green-gradient);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+    transition: all var(--transition-base);
+    margin-top: var(--space-4);
+}
+
+.popup-hire-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-green-hover);
+}

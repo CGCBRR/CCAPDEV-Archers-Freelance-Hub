@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Archer's Freelance Hub</title>
+    <link rel="stylesheet" href="../css/loginpage.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo-section">
+                <img src="../../images/dlsu-login-logo.png" alt="DLSU Logo">
+                <h1>Archer's Freelance Hub</h1>
+                <p class="subtitle">Sign in to continue</p>
+            </div>
+
+            <form class="login-form" action="../pages/homepage.html">
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <span class="toggle-password" id="togglePassword">Show</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">Log In</button>
+
+            </form>
+
+            <div class="form-footer">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <div class="copyright">
+                © 2026 Archer's Freelance Hub. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/loginpage.js"></script>
+
+</body>
+</html>

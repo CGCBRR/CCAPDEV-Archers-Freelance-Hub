@@ -1,0 +1,108 @@
+/* ========== PROFILE-INFO.CSS ========== */
+.profile-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-10);
+    padding-top: 40px; /* Reduced since avatar now overlaps */
+    position: relative;
+    z-index: 10;
+}
+
+.info-main {
+    margin-bottom: var(--space-6);
+    margin-top: 20px; /* Add some space after avatar */
+}
+
+.profile-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.5px;
+}
+
+.profile-tagline {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+}
+
+.profile-meta {
+    display: flex;
+    gap: var(--space-8);
+    padding: var(--space-4) 0;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-1);
+}
+
+.meta-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    margin: var(--space-8) 0;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+    transition: all 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-green);
+    border-color: var(--green-primary);
+}
+
+.stat-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--green-primary);
+    margin-bottom: var(--space-1);
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+
+.profile-bio {
+    background: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-light);
+}
+
+.profile-bio h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.profile-bio p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
