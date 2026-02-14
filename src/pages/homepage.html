@@ -28,8 +28,9 @@
         </nav>
 
         <div class="header-right">
-            <button class="logout-btn">Log out</button>
-            <div class="profile-icon">
+            <button class="post-btn">+ Post Project</button>
+            <button class="logout-btn" onclick="window.location.href='loginpage.html'">Log out</button>
+            <div class="profile-icon" onclick="window.location.href='profile.html'" style="cursor: pointer;">
                 <img src="../../images/profile.jpg" alt="Profile">
                 <span class="online-indicator"></span>
             </div>
@@ -128,65 +129,71 @@
             </div>
         </section>
 
-        <!-- SUBCATEGORIES -->
-        <section class="subcategories-section">
+        <!-- FEATURED FREELANCERS -->
+        <section class="featured-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">FEATURED</span>
+                    <h2 class="section-title">Top freelancers this week</h2>
+                </div>
+                <a href="#" class="view-all">View all →</a>
+            </div>
 
-            <h3 class="subcategories-title">Visual Arts</h3>
-            <ul>
-                <li>
-                    <div class="card" onclick="openPopup()">
-                        <div class="card-header">
-                            <div class="card-user-info">
-                                <div class="profile-icon">
-                                    <img src="../../images/profile2.jpg" alt="Project Sample 1">
-                                </div>
-                                <div class="user-details">
-                                    <p class="user-name">Carlos Barring</p>
-                                    <p class="user-year">ID125 | 1st Year</p>
-                                </div>
-                            </div>
-                            <div class="card-buttons">
-                                <button class="message-btn">Contact</button>
-                                <button class="hire-btn" onclick="openPopup()">Hire</button>
-                            </div>
-                        </div>
-
-                        <div class="card-subheader">
-                            <div class="user-credentials">
-                                <div class="value-details">
-                                    <p class="credentials-value">$99.99</p>
-                                    <p class="credentials-title">Earned</p>
-                                </div>
-                                <div class="value-details">
-                                    <p class="credentials-value">X25</p>
-                                    <p class="credentials-title">Completed</p>
-                                </div>
-                                <div class="value-details">
-                                    <p class="credentials-value">5.0</p>
-                                    <p class="credentials-title">Rating</p>
-                                </div>
-                                <div class="sub-category">
-                                    <p class="project-subcategory">Visual Arts</p>
-                                </div>  
+            <div class="freelancers-grid">
+                <!-- Card 1 -->
+                <div class="freelancer-card" onclick="openPopup()">
+                    <div class="card-header">
+                        <div class="user-info">
+                            <img src="../../images/profile2.jpg" alt="Carlos Barring" class="user-avatar">
+                            <div>
+                                <h3 class="user-name">Carlos Barring</h3>
+                                <p class="user-meta">ID125 • 1st Year • COS</p>
                             </div>
                         </div>
-
-                        <div class="card-body">
-                            <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nullam quis sodales lectus, vitae lobortis diam.
-                            </p>
-                        </div>
-
-                        <div class="card-images">
-                            <img src="../../images/sample1.jpg" alt="Project Sample 1">
-                            <img src="../../images/sample2.jpg" alt="Project Sample 2">
-                            <img src="../../images/sample3.jpeg" alt="Project Sample 3">
-                            <img src="../../images/sample4.jpg" alt="Project Sample 4">
+                        <div class="badge-group">
+                            <span class="badge-green">Visual Arts</span>
                         </div>
                     </div>
-                </li>
-            </ul>
+
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span class="stat-value">$99.99</span>
+                            <span class="stat-label">Earned</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">25</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">5.0</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+
+                    <p class="freelancer-bio">
+                        Specializing in digital illustration and brand design. 
+                        3+ years of freelance experience with local startups.
+                    </p>
+
+                    <div class="portfolio-grid">
+                        <img src="../../images/sample1.jpg" alt="Portfolio 1">
+                        <img src="../../images/sample2.jpg" alt="Portfolio 2">
+                        <img src="../../images/sample3.jpeg" alt="Portfolio 3">
+                        <img src="../../images/sample4.jpg" alt="Portfolio 4">
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="action-btn message-btn" onclick="event.stopPropagation()">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M17 9C17 13.4183 13.4183 17 9 17C7.3 17 5.7 16.5 4.4 15.7L1 17L2.8 13.5C1.9 12 1.3 10.3 1.3 8.5C1.3 4.1 4.7 1 9 1C13.3 1 17 4.1 17 9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                            Message
+                        </button>
+                        <button class="action-btn hire-btn" onclick="event.stopPropagation()">Hire Now</button>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
         </section>
 
         <!-- CTA SECTION -->
