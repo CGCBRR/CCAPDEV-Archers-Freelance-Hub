@@ -1,8 +1,6 @@
 /* ========== CATEGORIES.CSS ========== */
 /* Categories section and category cards */
-* {
-   /* outline: 1px solid red; */
-}
+
 .categories-head {
     display: flex;
     flex-direction: column;
@@ -13,22 +11,16 @@
 }
 
 .category-info {
-    display: flex;
+    display: grid;
     align-items: center;
-    position: relative;
+    grid-template-columns: 1fr auto 1fr;
     padding-bottom: 20px;
 }
 
-.section-name {
-    position: absolute;
-    margin: 0px;
-}
-
-
 .categories-grid {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--space-2);
     max-width: var(--container-max);
 }
