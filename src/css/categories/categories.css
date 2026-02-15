@@ -1,7 +1,7 @@
 /* ========== CATEGORIES.CSS ========== */
 /* Categories section and category cards */
 * {
-    outline: 1px solid red; */
+   /* outline: 1px solid red; */
 }
 .categories-head {
     display: flex;
@@ -15,22 +15,19 @@
 .category-info {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+    position: relative;
     padding-bottom: 20px;
 }
 
 .section-name {
     position: absolute;
-    
-}
-.category-info > .categories-grid {
-   justify-content: flex-start;
+    margin: 0px;
 }
 
 
 .categories-grid {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--space-2);
     max-width: var(--container-max);
