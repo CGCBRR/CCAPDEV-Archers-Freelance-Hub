@@ -15,3 +15,14 @@ editBtn.addEventListener("click", ()=>{
     
     location.replace('../pages/editProfile.html');
 });
+
+if(localStorage.getItem('change') === "1"){
+    profileName.textContent = localStorage.getItem('profileName');
+    profileTagline.textContent = localStorage.getItem('profileTagline');
+    profileLocation.textContent = localStorage.getItem('profileLocation');
+    profileLanguage.textContent = localStorage.getItem('profileLanguage') ;
+    profileBio.textContent = localStorage.getItem('profileBio');
+
+    //Get rid off if you want changes to be permanent
+    localStorage.setItem('change', "0");
+}
