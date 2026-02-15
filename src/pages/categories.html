@@ -38,10 +38,9 @@
     </header>
 
     <main>
-
         <!-- EXPLORE CATEGORIES -->
         <section class="categories-section">
-            <section class="categories-head">
+            <div class="categories-head">
                 <div class="category-info">
                     <div class="section-name">
                         <span class="section-tag">BROWSE ALL</span>
@@ -78,54 +77,55 @@
                         <input type="text" placeholder="Search for services, freelancers, or skills...">
                     </div>
                 </div>
-            </section>
-
-            <section class="categories-posts">
-                <div class="freelancer-card" onclick="openPopup()">
-                    <div class="card-header">
-                        <div class="user-info">
-                            <img src="../../images/profile2.jpg" alt="Carlos Barring" class="user-avatar">
-                            <div>
-                                <h3 class="user-name">Carlos Barring</h3>
-                                <p class="user-meta">ID125 • 1st Year • COS</p>
-                            </div>
-                        </div>
-                        <div class="badge-group">
-                            <span class="badge-green">Visual Arts</span>
+            </div>
+        </section>
+        
+        <section class="categories-posts">
+            <div class="freelancer-card" onclick="openPopup()">
+                <div class="card-header">
+                    <div class="user-info">
+                        <img src="../../images/profile2.jpg" alt="Carlos Barring" class="user-avatar">
+                        <div>
+                            <h3 class="user-name">Carlos Barring</h3>
+                            <p class="user-meta">ID125 • 1st Year • COS</p>
                         </div>
                     </div>
-
-                    <div class="stats-row">
-                        <div class="stat">
-                            <span class="stat-value">$99.99</span>
-                            <span class="stat-label">Earned</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">25</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">5.0</span>
-                            <span class="stat-label">Rating</span>
-                        </div>
-                    </div>
-
-                    <p class="freelancer-bio">
-                        Specializing in digital illustration and brand design. 
-                        3+ years of freelance experience with local startups.
-                    </p>
-
-                    <div class="portfolio-grid">
-                        <img src="../../images/sample1.jpg" alt="Portfolio 1">
-                        <img src="../../images/sample2.jpg" alt="Portfolio 2">
-                        <img src="../../images/sample3.jpeg" alt="Portfolio 3">
-                        <img src="../../images/sample4.jpg" alt="Portfolio 4">
-                    </div>
-
-                    <div class="card-actions">
-                        <button class="action-btn hire-btn" onclick="event.stopPropagation()">Hire Now</button>
+                    <div class="badge-group">
+                        <span class="badge-green">Visual Arts</span>
                     </div>
                 </div>
+
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="stat-value">$99.99</span>
+                        <span class="stat-label">Earned</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">25</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5.0</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+
+                <p class="freelancer-bio">
+                    Specializing in digital illustration and brand design. 
+                    3+ years of freelance experience with local startups.
+                </p>
+
+                <div class="portfolio-grid">
+                    <img src="../../images/sample1.jpg" alt="Portfolio 1">
+                    <img src="../../images/sample2.jpg" alt="Portfolio 2">
+                    <img src="../../images/sample3.jpeg" alt="Portfolio 3">
+                    <img src="../../images/sample4.jpg" alt="Portfolio 4">
+                </div>
+
+                <div class="card-actions">
+                    <button class="action-btn hire-btn" onclick="event.stopPropagation()">Hire Now</button>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -151,7 +151,7 @@
     </footer>
 
     <!-- POPUP -->
-     <!--
+
     <div class="overlay" id="overlay">
         <div class="popup">
             <button class="closeBtn" onclick="closePopup()">×</button>
@@ -206,7 +206,6 @@
             </div>
         </div>
     </div>
-    -->
     <script src="../js/homepage.js"></script>
 </body>
 </html>
