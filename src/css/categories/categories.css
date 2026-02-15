@@ -1,0 +1,48 @@
+/* ========== CATEGORIES.CSS ========== */
+/* Categories section and category cards */
+
+.categories-section {
+    background: var(--white);
+    padding: 80px var(--container-padding);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-6);
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+/* Category Card */
+.category-card {
+    background: var(--gray-50);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-green);
+    border-color: var(--green-primary);
+}
+
+.category-icon {
+    font-size: 48px;
+    margin-bottom: var(--space-5);
+}
+
+.category-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.category-card p {
+    font-size: 14px;
+    color: var(--text-tertiary);
+}
