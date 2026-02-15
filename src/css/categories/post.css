@@ -1,19 +1,6 @@
 /* ========== FEATURED.CSS ========== */
 /* Featured freelancers section and cards */
 
-.featured-section {
-    background: var(--gray-50);
-    padding: 80px var(--container-padding);
-}
-
-.freelancers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: var(--space-8);
-    max-width: var(--container-max);
-    margin: 0 auto;
-}
-
 /* Freelancer Card */
 .freelancer-card {
     background: var(--white);
