@@ -1,0 +1,103 @@
+[33mcommit 3f1f6a11a192181d59a4ef6d39b8e379a0d56659[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: CGCBRR <carlo62996@gmail.com>
+Date:   Sun Feb 8 20:54:18 2026 +0800
+
+    created repo layout and fixed paths
+
+[33mcommit e4d348de3c15d91e3bf984580dd5d9a250b824fa[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Sun Feb 8 18:45:44 2026 +0800
+
+    updated popup (in progress)
+
+[33mcommit 85bc070d541524550da3edb55953ada5729022f3[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Sun Feb 8 18:32:55 2026 +0800
+
+    minor fixes
+
+[33mcommit 0e67720b611e592c04d97935be25879cae563544[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Sun Feb 8 18:21:17 2026 +0800
+
+    fixes
+
+[33mcommit b93aed58b8b912b8cbebcb52ed2046652dd987fa[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Sun Feb 8 17:46:50 2026 +0800
+
+    Connected js + tested popup
+
+[33mcommit d36e6f7c512cf0f7e22c6aa679e5d96f7380b8bb[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:45:36 2026 +0800
+
+    Update index.html
+
+[33mcommit fa79a5a116fef1615474502fd381e2104f4c39a0[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:44:33 2026 +0800
+
+    Uploaded Files
+
+[33mcommit 989902d695bee92d892bae072f95f74fca652aa3[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:31:27 2026 +0800
+
+    Delete sample2.jpg
+
+[33mcommit c22109a7bb8a1a56ae0cc58bf394946624e19dbe[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:31:16 2026 +0800
+
+    Delete sample1.jpg
+
+[33mcommit 989cedab7e50b22d1f388c2b0e2afd2d541e6cbf[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:31:07 2026 +0800
+
+    Delete profile.jpg
+
+[33mcommit 50a8c81ce2ad7dfde82e161ac4dafc3f98a53f82[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:30:57 2026 +0800
+
+    Delete logo.png
+
+[33mcommit 2da4c4e6ea2202fb06d79892edb890c46b115452[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:30:46 2026 +0800
+
+    Delete hero-image.png
+
+[33mcommit 56be1393071d6673801c8b95f50f7a71e69198bf[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:30:12 2026 +0800
+
+    Delete carlostyles.css
+
+[33mcommit f807ad8702caa8ab260a125f13c0c216f021abe9[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 13:29:52 2026 +0800
+
+    Delete carlo.html
+
+[33mcommit 962f64dd7baf23affd973c1272e59239dee718f8[m
+Author: DaniDev937 <daniel_rebudiao@dlsu.edu.ph>
+Date:   Wed Feb 4 12:21:16 2026 +0800
+
+    Add files via upload
+    
+    uploaded all files (to be organized)
+
+[33mcommit 517eaf191ba3f5241e0b6301317beebd131b893a[m
+Author: CGCBRR <carlo62996@gmail.com>
+Date:   Thu Jan 29 00:04:41 2026 +0800
+
+    Fix header formatting in README.md
+
+[33mcommit 32332391b1c3dc1b084a8087c0ed3c3d81e40c00[m
+Author: CGCBRR <carlo62996@gmail.com>
+Date:   Wed Jan 28 23:52:18 2026 +0800
+
+    Initial commit
