@@ -11,17 +11,6 @@
     overflow: visible;
 }
 
-.categories-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3%;
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(to right, rgba(152, 152, 152, 0), rgba(255, 255, 255, 1));
-}
-
 .categories-grid {
     display: flex;
     gap: var(--space-6);
@@ -32,15 +21,6 @@
     overflow-y: visible;
     scroll-behavior: smooth;
     padding-bottom: 10px;
-}
-
-.categories-grid::-webkit-scrollbar {
-    height: 8px;
-}
-
-.categories-grid::-webkit-scrollbar-thumb {
-    background: var(--green-primary);
-    border-radius: 10px;
 }
 
 /* Category Card */
@@ -59,7 +39,7 @@
     /* transform: translateY(-6px); */
     /* box-shadow: var(--shadow-green); */
     /* ================================= */
-    
+
     /* ========= JUST SHADOWS ========= */
     box-shadow: 0 12px 24px rgba(0,128,0,0.3);
     /* ================================= */
@@ -83,4 +63,25 @@
 .category-card p {
     font-size: 14px;
     color: var(--text-tertiary);
+}
+
+/* Categories Scrollbar */
+.categories-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categories-grid::-webkit-scrollbar-track {
+    height: 8px;
+    background: var(--gray-200);
+    border-radius: 10px;
+}
+
+.categories-grid::-webkit-scrollbar-thumb {
+    background: var(--green-primary);
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.categories-grid::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
 }
