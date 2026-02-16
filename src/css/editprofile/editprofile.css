@@ -1,0 +1,56 @@
+
+* {
+    /*border: 1px solid red; */
+}
+
+
+.profile-buttons {
+    display: flex;
+    gap: 16px;
+    padding-top: 48px;
+} 
+
+.profile-meta {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Input Fields Design */
+input[type="text"] {
+    display: flex;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 18px 20px 18px 12px;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: all var(--transition-base);
+    background: var(--white);
+}
+
+
+/* Button Design */
+#saveBtn, #cancelBtn {
+    padding: 12px 64px;
+    background: #008c47;
+    border-radius: var(--radius-lg);
+    border: var(--gray-100);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+
+#saveBtn:hover, #cancelBtn:hover {
+    transform: translateY(-8px);
+}

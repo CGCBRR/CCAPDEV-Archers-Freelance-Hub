@@ -1,0 +1,61 @@
+/* ========== PROFILE-INFO.CSS ========== */
+.profile-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-10);
+    padding-top: 40px; /* Reduced since avatar now overlaps */
+    position: relative;
+    z-index: 10;
+    background: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-light);
+}
+
+.profile-basic-info, .profile-bio, .profile-meta {
+    padding-bottom: 14px;
+}
+
+.profile-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.5px;
+}
+
+.meta-fields {
+    gap: var(--space-8);
+    padding: var(--space-4) 0;
+    display: flex;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-1);
+}
+
+.meta-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+    
+.profile-bio h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.profile-bio p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
