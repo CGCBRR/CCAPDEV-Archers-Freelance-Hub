@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/profile/main.css" />
+    <link rel="stylesheet" href="../css/editprofile/main.css" />
 </head>
 <body>
     <header class="header">
@@ -26,13 +26,6 @@
         </nav>
 
         <div class="header-right">
-            <div class="search-wrapper">
-                <svg class="search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M17 17L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <input type="text" placeholder="Search..." class="search-input">
-            </div>
             <button class="post-btn">+ Post</button>
             <button class="logout-btn">Log out</button>
             <div class="profile-icon">
@@ -60,35 +53,45 @@
         </section>
 
         <!-- Profile Info Section -->
-        <section class="profile-info" >
+        <section class="profile-info">
             <div class="info-main">
-                <input type="text" id="profileName">
-                <input type="text" id="profileTagline">
+                <div class="profile-basic-info">
+                    <div>
+                        <span class="meta-label">Name</span>
+                        <input type="text" class="nameInput" id="profileName">
+                    </div>
+                    <div>
+                        <span class="meta-label">Bio</span>
+                        <input type="text" class="tagInput" id="profileTagline">
+                    </div>
+                    <div>
+                        <span class="meta-label">About</span>
+                        <input type="text" id="profileBio">
+                    </div>
+                </div>
                 
                 <div class="profile-meta">
-                    <div class="meta-item">
-                        <span class="meta-label">Member since</span>
-                        <span class="meta-value">January 2024</span>
+                    <div class="meta-fields">
+                        <div class="meta-item">
+                            <span class="meta-label">Location</span>
+                            <input type="text" id="location">
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Languages</span>
+                            <input type="text" id="language">
+                        </div>
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Location</span>
-                        <input type="text" id="location">
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Languages</span>
-                        <input type="text" id="language">
+                    <div class="profile-buttons">
+                        <div class="saveBtn">
+                            <button id="saveBtn">Save</button>
+                        </div>
+                        <div class="cancelBtn">
+                            <button id="cancelBtn">Cancel</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="profile-bio" >
-                <h3>About</h3>
-                <input type="text" id="profileBio">
-            </div>
         </section>
-
-        <button id="saveBtn">Save</button>
-        <button id="cancelBtn">Cancel</button>
 
     </main>
 
