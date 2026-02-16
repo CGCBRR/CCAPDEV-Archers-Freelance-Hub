@@ -6,12 +6,41 @@
     padding: 80px var(--container-padding);
 }
 
+.categories-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.categories-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(152, 152, 152, 0), rgba(255, 255, 255, 1));
+}
+
 .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    display: flex;
     gap: var(--space-6);
     max-width: var(--container-max);
+    margin-top: 20px;
     margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.categories-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categories-grid::-webkit-scrollbar-thumb {
+    background: var(--green-primary);
+    border-radius: 10px;
 }
 
 /* Category Card */
@@ -22,12 +51,21 @@
     padding: var(--space-8) var(--space-6);
     text-align: center;
     transition: all var(--transition-base);
+    flex: 0 0 220px;
 }
 
 .category-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-green);
+    /* === TRANSFORMING UP ANIMATION === */
+    /* transform: translateY(-6px); */
+    /* box-shadow: var(--shadow-green); */
+    /* ================================= */
+    
+    /* ========= JUST SHADOWS ========= */
+    box-shadow: 0 12px 24px rgba(0,128,0,0.3);
+    /* ================================= */
     border-color: var(--green-primary);
+    position: relative;
+    z-index: 10;
 }
 
 .category-icon {
