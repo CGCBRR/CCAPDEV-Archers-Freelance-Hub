@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer's Freelance Hub | Find DLSU Talent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/categories/main.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <img src="../../images/logo.png" alt="Archer's Freelance Hub" class="logo-img">
+            <div class="brand-text">
+                <h1 class="logo-text">Archer's Freelance Hub</h1>
+                <span class="badge">DLSU Exclusive</span>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="profile.html" class="nav-link">My Projects</a>
+            <a href="#" class="nav-link">Messages</a>
+        </nav>
+
+        <div class="header-right">
+            <button class="post-btn">+ Post Project</button>
+            <button class="logout-btn" onclick="window.location.href='loginpage.html'">Log out</button>
+            <div class="profile-icon" onclick="window.location.href='profile.html'" style="cursor: pointer;">
+                <img src="../../images/profile.jpg" alt="Profile">
+                <span class="online-indicator"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- EXPLORE CATEGORIES -->
+        <section class="categories-section">
+            <div class="categories-head">
+                <div class="category-info">
+                    <div class="section-name">
+                        <span class="section-tag">BROWSE ALL</span>
+                    </div>
+
+                    <div class="categories-grid">
+                        <button class="category-card">
+                            <h3>Visual Arts</h3>
+                        </button>
+                        <button class="category-card">
+                            <h3>Academic Help</h3>
+                        </button>
+                        <button class="category-card">
+                            <h3>Video Editing</h3>
+                        </button>
+                        <button class="category-card">
+                            <h3>Programming</h3>
+                        </button>
+                        <button class="category-card">
+                            <h3>Marketing</h3>
+                        </button>
+                        <button class="category-card">
+                            <h3>Music & Audio</h3>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 19L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" placeholder="Search for services, freelancers, or skills...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="categories-posts">
+            <div class="freelancer-card" onclick="openPopup()">
+                <div class="card-header">
+                    <div class="user-info">
+                        <img src="../../images/profile2.jpg" alt="Carlos Barring" class="user-avatar">
+                        <div>
+                            <h3 class="user-name">Carlos Barring</h3>
+                            <p class="user-meta">ID125 • 1st Year • COS</p>
+                        </div>
+                    </div>
+                    <div class="badge-group">
+                        <span class="badge-green">Visual Arts</span>
+                    </div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="stat-value">$99.99</span>
+                        <span class="stat-label">Earned</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">25</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5.0</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+
+                <p class="freelancer-bio">
+                    Specializing in digital illustration and brand design. 
+                    3+ years of freelance experience with local startups.
+                </p>
+
+                <div class="portfolio-grid">
+                    <img src="../../images/sample1.jpg" alt="Portfolio 1">
+                    <img src="../../images/sample2.jpg" alt="Portfolio 2">
+                    <img src="../../images/sample3.jpeg" alt="Portfolio 3">
+                    <img src="../../images/sample4.jpg" alt="Portfolio 4">
+                </div>
+
+                <div class="card-actions">
+                    <button class="action-btn hire-btn" onclick="event.stopPropagation()">Hire Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="../../images/logo.png" alt="Archer's Freelance Hub" class="footer-logo">
+                <div>
+                    <p class="footer-brand-name">Archer's Freelance Hub</p>
+                    <span class="badge">DLSU Exclusive</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQs</a>
+            </div>
+            <p class="copyright">© 2026 Archer's Freelance Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- POPUP -->
+
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <button class="closeBtn" onclick="closePopup()">×</button>
+            
+            <div class="popup-content">
+                <div class="popup-gallery">
+                    <img src="../../images/sample1.jpg" alt="Project Sample" class="popup-main-image">
+                    <div class="popup-thumbnails">
+                        <img src="../../images/sample2.jpg" alt="Thumbnail">
+                        <img src="../../images/sample3.jpeg" alt="Thumbnail">
+                        <img src="../../images/sample4.jpg" alt="Thumbnail">
+                    </div>
+                </div>
+
+                <div class="popup-details">
+                    <div class="popup-header">
+                        <h2>Project: Brand Identity Design</h2>
+                        <span class="popup-price">$299</span>
+                    </div>
+                    
+                    <div class="popup-user">
+                        <img src="../../images/profile2.jpg" alt="Carlos Barring">
+                        <div>
+                            <h4>Carlos Barring</h4>
+                            <p>Visual Arts • 25 projects completed</p>
+                        </div>
+                    </div>
+
+                    <div class="popup-description">
+                        <h4>Project Description</h4>
+                        <p>
+                            Complete brand identity package including logo design, 
+                            color palette, typography, and brand guidelines. 
+                            Perfect for startups and small businesses looking to 
+                            establish a professional brand presence.
+                        </p>
+                    </div>
+
+                    <div class="popup-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Delivery</span>
+                            <span class="meta-value">7 days</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Revisions</span>
+                            <span class="meta-value">Unlimited</span>
+                        </div>
+                    </div>
+
+                    <button class="popup-hire-btn">Hire Carlos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/homepage.js"></script>
+</body>
+</html>

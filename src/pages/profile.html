@@ -1,99 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <title>Archer's Freelance Hub Profile</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/profile.css" />
-    </head>
-
-    <body>
-        <header class="header">
-            <div class="header-left">
-                <img src="../../images/logo.png" alt="Logo" class="logo-img">
+<head>
+    <title>Archer's Freelance Hub | Profile</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/profile/main.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="../../images/logo.png" alt="Archer's Freelance Hub" class="logo-img">
+            <div class="brand-text">
                 <h1 class="logo-text">Archer's Freelance Hub</h1>
+                <span class="badge">DLSU Exclusive</span>
             </div>
-            <div class="header-middle">
-                <a href="homepage.html">
-                    <button class="home-btn">Home</button>
-                </a>
-                <button class="search-btn">Search</button>
+        </div>
+        
+        <nav class="header-nav">
+            <a href="homepage.html" class="nav-link">Browse</a>
+            <a href="profile.html" class="nav-link active">My Projects</a>
+            <a href="#" class="nav-link">Messages</a>
+        </nav>  
+
+        <div class="header-right">
+            <div class="search-wrapper">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 17L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" placeholder="Search..." class="search-input">
             </div>
-            <div class="header-right">
-                <button class="logout-btn">Log out</button>
-                <div class="profile-icon">
-                    <img src="../../images/profile.jpg" alt="Profile">
+            <button class="post-btn">+ Post</button>
+            <button class="logout-btn" onclick="window.location.href='loginpage.html'">Log out</button>
+            <div class="profile-icon">
+                <img src="../../images/jb.jpg" alt="Profile">
+                <span class="online-indicator"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Profile Cover Section -->
+        <section class="profile-cover">
+            <div class="cover-image"></div>
+            
+            <div class="profile-header">
+                <div class="profile-avatar-wrapper">
+                    <img src="../../images/jb.jpg" alt="Jean-Baptist De La Salle" class="profile-avatar">
+                    <span class="verified-badge">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5L10 0Z" fill="#006937"/>
+                        </svg>
+                    </span>
+                </div>
+                
+                <div class="profile-actions">
+                    <button class="btn-primary" id = "editBtn">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M13 7L9 11L5 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Edit Profile
+                    </button>
+                    <button class="btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M14 10V14C14 15.1 13.1 16 12 16H4C2.9 16 2 15.1 2 14V6C2 4.9 2.9 4 4 4H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M10 2H16V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M8 10L16 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Share
+                    </button>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <section class="profile-image-head">
-                <div class="profile-main-icon">
-                    <img id="profile-main-icon" src="../../images/jb.jpg">
+        <!-- Profile Info Section -->
+        <section class="profile-info" >
+            <div class="info-main">
+                <h1 class="profile-name" id="profileName">Jean-Baptist De La Salle</h1>
+                <p class="profile-tagline" id="profileTagline">Educator, Founder of the Institute of the Brothers of the Christian Schools</p>
+                
+                <div class="profile-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Member since</span>
+                        <span class="meta-value">January 2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value" id="location">Manila, Philippines</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Languages</span>
+                        <span class="meta-value"id="language">English, Filipino</span>
+                    </div>
                 </div>
-                <div class="profile-edit-btn">
-                    <button class="edit-btn">Edit Profile</button>
+            </div>
+
+            <div class="profile-stats">
+                <div class="stat-card">
+                    <span class="stat-number"id="projectNum">156</span>
+                    <span class="stat-label">Projects</span>
                 </div>
-            </section>
-
-            <section class="profile-content">
-                <div class="profile-name">
-                    <p>Jean-Baptist De La Salle</p>
+                <div class="stat-card">
+                    <span class="stat-number"id="ratingNum">4.9</span>
+                    <span class="stat-label">Rating</span>
                 </div>
-                <div class="profile-bio">
-                    <p>Educator, Founder of the Institute of the Brothers of the Christian Schools</p>
+                <div class="stat-card">
+                    <span class="stat-number">234</span>
+                    <span class="stat-label">Followers</span>
                 </div>
-            </section>
+                <div class="stat-card">
+                    <span class="stat-number">89</span>
+                    <span class="stat-label">Following</span>
+                </div>
+            </div>
 
-            <section class="posts-section" >
-                <div class="category" id="art-section">
+            <div class="profile-bio" >
+                <h3>About</h3>
+                <p id = "profileBio">Passionate educator with over 20 years of experience in curriculum development and educational leadership. Founder of multiple learning initiatives and dedicated to fostering academic excellence in the DLSU community.</p>
+            </div>
+        </section>
 
-                    <h2 class="post-cat-name">Art</h2>
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <a href="#" class="view-all">Add skills +</a>
+            </div>
+            
+            <div class="skills-grid">
+                <span class="skill-tag">Curriculum Design</span>
+                <span class="skill-tag">Educational Leadership</span>
+                <span class="skill-tag">Teacher Training</span>
+                <span class="skill-tag">Program Development</span>
+                <span class="skill-tag">Academic Writing</span>
+                <span class="skill-tag">Mentoring</span>
+            </div>
+        </section>
 
-                    <div class="post-container">
-                        <div class="post">
-                            <img class="post-image" src="../../images/sample1.jpg">
-                                <div class="post-info">
-                                    <h4 class="post-title">Crochet</h4>
-                                    <p class="post-review">5 ★★★★★ | 10 reviews</p>
-                                    <p class="post-price">20-500</p>
-                                    <p class="post-desc">Description</p>
-                                </div>
+        <!-- Portfolio/Posts Section -->
+        <section class="portfolio-section"id="portfolioSect">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">PORTFOLIO</span>
+                    <h2 class="section-title">Art Projects</h2>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active">All</button>
+                    <button class="filter-tab">Art</button>
+                    <button class="filter-tab">Design</button>
+                    <button class="filter-tab">Crafts</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../images/sample1.jpg" alt="Crochet Project">
+                        <span class="project-category">Art</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Handmade Crochet Collection</h3>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(10 reviews)</span>
                         </div>
-
-                        <div class="post">
-                            <img class="post-image" src="../../images/sample1.jpg">
-                                <div class="post-info">
-                                    <h4 class="post-title">Crochet</h4>
-                                    <p class="post-review">5 ★★★★★ | 10 reviews</p>
-                                    <p class="post-price">20-500</p>
-                                    <p class="post-desc">Description</p>
-                                </div>
-                        </div>
-
-                        <div class="post">
-                            <img class="post-image" src="../../images/sample1.jpg">
-                                <div class="post-info">
-                                    <h4 class="post-title">Crochet</h4>
-                                    <p class="post-review">5 ★★★★★ | 10 reviews</p>
-                                    <p class="post-price">20-500</p>
-                                    <p class="post-desc">Description</p>
-                                </div>
-                        </div>
-                        <div class="post" onclick="">
-                            <img class="post-image" src="../../images/sample1.jpg">
-                            <div class="post-info">
-                                <h4 class="post-title">Crochet</h4>
-                                <p class="post-review">5 ★★★★★ | 10 reviews</p>
-                                <p class="post-price">20-500</p>
-                                <p class="post-desc">Description</p>
-                            </div>
+                        <p class="project-description">Custom crochet items including amigurumi, blankets, and accessories. Made with premium materials.</p>
+                        <div class="project-footer">
+                            <span class="project-price">₱20 - ₱500</span>
+                            <button class="project-action">View Details →</button>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../images/sample2.jpg" alt="Digital Art">
+                        <span class="project-category">Design</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Illustrations</h3>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(24 reviews)</span>
+                        </div>
+                        <p class="project-description">Custom digital art and illustrations for books, websites, and branding projects.</p>
+                        <div class="project-footer">
+                            <span class="project-price">₱100 - ₱1000</span>
+                            <button class="project-action">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../images/sample3.jpeg" alt="Watercolor">
+                        <span class="project-category">Art</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Watercolor Paintings</h3>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(15 reviews)</span>
+                        </div>
+                        <p class="project-description">Original watercolor artwork and commissioned pieces for personal and commercial use.</p>
+                        <div class="project-footer">
+                            <span class="project-price">₱50 - ₱300</span>
+                            <button class="project-action">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../../images/sample4.jpg" alt="Calligraphy">
+                        <span class="project-category">Design</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Calligraphy & Lettering</h3>
+                        <div class="project-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(8 reviews)</span>
+                        </div>
+                        <p class="project-description">Hand-lettered designs for invitations, logos, and custom artwork.</p>
+                        <div class="project-footer">
+                            <span class="project-price">₱30 - ₱200</span>
+                            <button class="project-action">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button class="load-more-btn">Load More Projects</button>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="section-header">
+                <h2 class="section-title">Client Reviews</h2>
+                <a href="#" class="view-all">View all 156 reviews →</a>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="../../images/profile2.jpg" alt="Client" class="reviewer-avatar">
+                        <div>
+                            <h4 class="reviewer-name">Maria Santos</h4>
+                            <p class="review-date">March 2024</p>
+                        </div>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Amazing attention to detail! The crochet pieces exceeded my expectations. Will definitely order again."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="../../images/profile.jpg" alt="Client" class="reviewer-avatar">
+                        <div>
+                            <h4 class="reviewer-name">John Reyes</h4>
+                            <p class="review-date">February 2024</p>
+                        </div>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Professional and talented. The digital illustrations captured exactly what I wanted. Highly recommended!"</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="../../images/logo.png" alt="Logo" class="footer-logo">
+                <p>Archer's Freelance Hub</p>
+                <span class="badge">DLSU Exclusive</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="copyright">© 2026 Archer's Freelance Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/profile.js"></script>
+</body>
 </html>
