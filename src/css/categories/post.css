@@ -128,15 +128,6 @@
     transition: all var(--transition-fast);
 }
 
-.message-btn {
-    background: var(--gray-100);
-    color: var(--gray-700);
-}
-
-.message-btn:hover {
-    background: var(--gray-200);
-}
-
 .hire-btn {
     background: var(--green-gradient);
     color: var(--white);
