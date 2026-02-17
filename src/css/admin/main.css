@@ -1,0 +1,6 @@
+/* main.css - Admin Dashboard Styles */
+@import url('base.css');
+@import url('header.css');
+@import url('dashboard.css');
+@import url('tables.css');
+@import url('footer.css');
