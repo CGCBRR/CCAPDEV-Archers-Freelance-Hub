@@ -1,0 +1,76 @@
+/* PROJECT DESCRIPTION */
+
+/* Goal Section */
+.goal-section {
+    display: flex;
+    padding: 60px 20px;
+    align-items: center;
+}
+
+.goal-header {
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+.goal-header-text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-5);
+    color: var(--green-dark);
+    letter-spacing: -1.5px;
+    max-width: 500px;
+}
+
+.goal-image {
+    width: 400px;
+    height: auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.goal-content {
+    color: var(--gray-600);
+    max-width: 600px;
+    font-weight: 500;
+}
+
+/* Exclusive Section */
+.exclusive-section {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+}
+
+.exclusive-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--green-dark);
+    letter-spacing: -1px;
+    margin-bottom: var(--space-12);
+    text-align: center;
+}
+
+.text-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exclusive-content {
+    color: var(--gray-600);
+    max-width: 500px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.exclusive-image-wrapper {
+    width: 500px;
+    height: auto;
+}
+
+.exclusive-image {
+    width: 100%;
+    height: auto;
+    /* border-radius: var(--radius-md); */
+    box-shadow: var(--shadow-lg);
+}
