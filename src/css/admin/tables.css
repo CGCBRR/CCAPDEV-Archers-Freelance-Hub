@@ -1,0 +1,102 @@
+/* ========== TABLES.CSS ========== */
+.table-section {
+    background: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-light);
+    margin-bottom: var(--space-8);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.data-table td {
+    padding: var(--space-4);
+    border-bottom: 1px solid var(--border-light);
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.data-table tr:hover td {
+    background-color: var(--gray-50);
+}
+
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.table-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-circle);
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.user-id {
+    font-size: 11px;
+    color: var(--text-tertiary);
+}
+
+.rating {
+    color: #fbbf24;
+    font-size: 13px;
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.status-badge.away {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+}
+
+.table-action {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-circle);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 16px;
+}
+
+.table-action:hover {
+    background: var(--gray-100);
+    transform: scale(1.1);
+}

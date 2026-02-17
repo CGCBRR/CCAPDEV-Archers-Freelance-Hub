@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Archer's Freelance Hub | Profile</title>
+    <title>Archer's Freelance Hub | Edit Profile</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
         </div>
         
         <nav class="header-nav">
-            <a href="homepage.html" class="nav-link active">Home</a>
+            <a href="homepage.html" class="nav-link">Home</a>
             <a href="#" class="nav-link">Messages</a>
             <a href="#" class="nav-link">Projects</a>
         </nav>
@@ -59,37 +59,84 @@
             </div>
         </section>
 
-        <!-- Profile Info Section -->
-        <section class="profile-info" >
-            <div class="info-main">
-                <input type="text" id="profileName">
-                <input type="text" id="profileTagline">
-                
-                <div class="profile-meta">
-                    <div class="meta-item">
-                        <span class="meta-label">Member since</span>
+        <!-- Profile Info Section - EDIT MODE -->
+        <section class="profile-info edit-mode">
+            <div class="edit-form-card">
+                <!-- Basic Info Section -->
+                <h3 class="edit-section-title">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 10C12.2 10 14 8.2 14 6C14 3.8 12.2 2 10 2C7.8 2 6 3.8 6 6C6 8.2 7.8 10 10 10Z" stroke="#006937" stroke-width="1.5"/>
+                        <path d="M2 18V16C2 13.8 4 12 6 12H14C16 12 18 13.8 18 16V18" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Basic Information
+                </h3>
+
+                <div class="edit-input-group">
+                    <label class="edit-input-label">Full Name</label>
+                    <input type="text" id="profileName" class="edit-input" value="Jean-Baptist De La Salle" placeholder="Enter your full name">
+                    <div class="edit-char-counter"><span>23</span>/100 characters</div>
+                </div>
+
+                <div class="edit-input-group">
+                    <label class="edit-input-label">Tagline</label>
+                    <input type="text" id="profileTagline" class="edit-input" value="Educator, Founder of the Institute of the Brothers of the Christian Schools" placeholder="Write a short tagline">
+                    <div class="edit-char-counter"><span>78</span>/100 characters</div>
+                </div>
+
+                <!-- Meta Information Grid -->
+                <div class="edit-meta-grid">
+                    <div class="edit-meta-item">
+                        <label class="edit-input-label">Member since</label>
                         <span class="meta-value">January 2024</span>
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Location</span>
-                        <input type="text" id="location">
+                    <div class="edit-meta-item">
+                        <label class="edit-input-label">Location</label>
+                        <input type="text" id="location" class="edit-input" value="Manila, Philippines">
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Languages</span>
-                        <input type="text" id="language">
+                    <div class="edit-meta-item">
+                        <label class="edit-input-label">Languages</label>
+                        <input type="text" id="language" class="edit-input" value="English, Filipino">
                     </div>
                 </div>
-            </div>
 
-            <div class="profile-bio" >
-                <h3>About</h3>
-                <input type="text" id="profileBio">
+                <!-- About Section -->
+                <h3 class="edit-section-title">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="4" width="16" height="12" rx="2" stroke="#006937" stroke-width="1.5"/>
+                        <path d="M6 8H14" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M6 12H12" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    About
+                </h3>
+
+                <div class="edit-input-group">
+                    <label class="edit-input-label">Biography</label>
+                    <textarea id="profileBio" class="edit-textarea" placeholder="Tell your story...">Passionate educator with over 20 years of experience in curriculum development and educational leadership. Founder of multiple learning initiatives and dedicated to fostering academic excellence in the DLSU community.</textarea>
+                    <div class="edit-char-counter"><span>187</span>/500 characters</div>
+                </div>
+
+                <!-- Preview Card -->
+                <div class="edit-preview-card">
+                    <div class="edit-preview-title">Profile Preview</div>
+                    <div class="edit-preview-content">
+                        Your profile will be visible to clients and freelancers. Make sure your information is accurate and professional. A complete profile increases your chances of getting hired by 40%.
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="edit-actions">
+                    <button class="edit-save-btn" id="saveBtn" onclick="window.location.href='profile.html'">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M15 4L7 12L3 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Save Changes
+                    </button>
+                    <button class="edit-cancel-btn" id="cancelBtn" onclick="window.location.href='profile.html'">
+                        Cancel
+                    </button>
+                </div>
             </div>
         </section>
-
-        <button id="saveBtn">Save</button>
-        <button id="cancelBtn">Cancel</button>
-
     </main>
 
     <!-- Footer -->
@@ -97,8 +144,10 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <img src="../../images/logo.png" alt="Logo" class="footer-logo">
-                <p>Archer's Freelance Hub</p>
-                <span class="badge">DLSU Exclusive</span>
+                <div>
+                    <p class="footer-brand-name">Archer's Freelance Hub</p>
+                    <span class="badge">DLSU Exclusive</span>
+                </div>
             </div>
             <div class="footer-links">
                 <a href="#">About</a>
