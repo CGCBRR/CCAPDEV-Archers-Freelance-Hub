@@ -58,7 +58,7 @@
 
 .exclusive-content {
     color: var(--gray-600);
-    max-width: 600px;
+    max-width: 500px;
     font-weight: 500;
     margin-right: 50px;
 }
