@@ -102,18 +102,52 @@
 
 /* Portfolio Grid */
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: var(--space-2);
     margin-bottom: var(--space-6);
+    overflow-x: auto;
+    padding-bottom: var(--space-2); 
+    scrollbar-width: thin; 
+    scrollbar-color: var(--green-primary) var(--gray-200); 
 }
 
 .portfolio-grid img {
-    width: 100%;
-    aspect-ratio: 1;
+    width: 80px; 
+    height: 80px; 
+    flex-shrink: 0; 
     object-fit: cover;
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
+}
+
+.portfolio-grid:has(img:first-child:nth-last-child(3)) img {
+    flex: 1 0 0;
+}
+
+.portfolio-grid:has(img:first-child:nth-last-child(2)) img {
+    flex: 1 0 0;
+}
+
+.portfolio-grid:has(img:first-child:nth-last-child(1)) img {
+    flex: 1 0 0;
+}
+
+.portfolio-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.portfolio-grid::-webkit-scrollbar-track {
+    background: var(--gray-200);
+    border-radius: var(--radius-full);
+}
+
+.portfolio-grid::-webkit-scrollbar-thumb {
+    background: var(--green-primary);
+    border-radius: var(--radius-full);
+}
+
+.portfolio-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--green-dark);
 }
 
 .portfolio-grid img:hover {

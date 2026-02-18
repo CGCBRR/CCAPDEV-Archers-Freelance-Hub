@@ -20,8 +20,7 @@
 .popup {
     margin-top: 2%;
     background: var(--white);
-    border-top-left-radius: var(--radius-md);
-    border-top-right-radius: var(--radius-md);
+    border-radius: var(--radius-md);
     width: 90%;
     max-width: 1500px;
     max-height: 100%;
