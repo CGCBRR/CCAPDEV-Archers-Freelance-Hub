@@ -56,22 +56,6 @@
     box-shadow: 0 20px 40px -10px rgba(0, 105, 55, 0.4);
 }
 
-.verified-badge {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: var(--white);
-    border-radius: var(--radius-circle);
-    padding: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 25;
-    border: 2px solid var(--white);
-}
-
-.verified-badge svg {
-    display: block;
-}
-
 /* Profile Header Right Container */
 .profile-header-right {
     display: flex;
