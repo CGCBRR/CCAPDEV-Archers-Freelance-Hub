@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Archer's Freelance Hub | Post Service</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/post-service/main.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="../../images/logo.png" alt="Archer's Freelance Hub" class="logo-img">
+            <div class="brand-text">
+                <h1 class="logo-text">Archer's Freelance Hub</h1>
+                <span class="badge">DLSU Exclusive</span>
+            </div>
+        </div>
+        
+        <nav class="header-nav">
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Messages</a>
+            <a href="#" class="nav-link">Projects</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-wrapper">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 17L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" placeholder="Search..." class="search-input">
+            </div>
+            <button class="post-btn active">+ Post Services</button>
+            <button class="logout-btn">Log out</button>
+            <div class="profile-icon">
+                <img src="../../images/jb.jpg" alt="Profile">
+                <span class="online-indicator"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <div class="page-header">
+            <div>
+                <h1 class="page-title">Post a Service</h1>
+                <p class="page-subtitle">Showcase your skills and start getting hired by DLSU clients</p>
+            </div>
+            <div class="badge freelancer-badge">🎓 Freelancer Mode</div>
+        </div>
+
+        <!-- Post Service Form -->
+        <section class="post-service-section">
+            <div class="post-form-card">
+                <!-- Service Title -->
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 10C12.2 10 14 8.2 14 6C14 3.8 12.2 2 10 2C7.8 2 6 3.8 6 6C6 8.2 7.8 10 10 10Z" stroke="#006937" stroke-width="1.5"/>
+                            <path d="M2 18V16C2 13.8 4 12 6 12H14C16 12 18 13.8 18 16V18" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Service Title <span class="required">*</span>
+                    </h3>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="e.g., I will design a professional logo for your business" value="I will create custom digital illustrations and character designs">
+                        <div class="char-counter"><span>48</span>/100 characters</div>
+                    </div>
+                </div>
+
+                <!-- Service Category -->
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="2" y="2" width="16" height="16" rx="2" stroke="#006937" stroke-width="1.5"/>
+                            <path d="M6 6H14" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M6 10H14" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M6 14H10" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Service Category <span class="required">*</span>
+                    </h3>
+                    <div class="form-group">
+                        <select class="form-select">
+                            <option value="" disabled selected>Select a category</option>
+                            <option value="visual-arts" selected>🎨 Visual Arts (Design, Illustration, Photography)</option>
+                            <option value="academic">📚 Academic Help (Tutoring, Research, Editing)</option>
+                            <option value="video">🎬 Video Editing (Production, Post-processing)</option>
+                            <option value="programming">💻 Programming (Web Dev, Mobile Apps, Software)</option>
+                            <option value="marketing">📊 Marketing (Social Media, SEO, Content)</option>
+                            <option value="music">🎵 Music & Audio (Production, Mixing, Voice-over)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Service Description -->
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="2" y="4" width="16" height="12" rx="2" stroke="#006937" stroke-width="1.5"/>
+                            <path d="M6 8H14" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M6 12H12" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Service Description <span class="required">*</span>
+                    </h3>
+                    <div class="form-group">
+                        <textarea class="form-textarea" placeholder="Describe the service you're offering in detail...">I specialize in creating custom digital illustrations for brands, content creators, and small businesses. My services include character design, social media graphics, book illustrations, and custom artwork. I work closely with clients to bring their vision to life with vibrant colors and unique styles.
+
+• Custom character design
+• Social media graphics and posts
+• Book and album cover illustrations
+• Digital portraits and commissions
+• Fast turnaround and unlimited revisions</textarea>
+                        <div class="char-counter"><span>324</span>/2000 characters</div>
+                    </div>
+                </div>
+
+                <!-- Service Details Grid -->
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 10H18" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="6" cy="14" r="2" stroke="#006937" stroke-width="1.5"/>
+                            <circle cx="14" cy="6" r="2" stroke="#006937" stroke-width="1.5"/>
+                        </svg>
+                        Service Details <span class="required">*</span>
+                    </h3>
+                    
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <label class="detail-label">Starting Price</label>
+                            <div class="price-input-wrapper">
+                                <span class="currency">₱</span>
+                                <input type="text" class="detail-input price-input" value="500">
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <label class="detail-label">Price Type</label>
+                            <select class="detail-select">
+                                <option value="fixed" selected>Fixed Price</option>
+                                <option value="hourly">Hourly Rate</option>
+                                <option value="negotiable">Negotiable</option>
+                            </select>
+                        </div>
+
+                        <div class="detail-item">
+                            <label class="detail-label">Delivery Time</label>
+                            <select class="detail-select">
+                                <option value="1-2">1-2 days</option>
+                                <option value="3-5">3-5 days</option>
+                                <option value="1week" selected>1 week</option>
+                                <option value="2weeks">2 weeks</option>
+                                <option value="1month">1 month</option>
+                            </select>
+                        </div>
+
+                        <div class="detail-item">
+                            <label class="detail-label">Experience Level</label>
+                            <select class="detail-select">
+                                <option value="entry">Entry Level</option>
+                                <option value="intermediate" selected>Intermediate</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio/Work Samples -->
+                <div class="form-section">
+                    <h3 class="form-section-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="2" y="2" width="16" height="16" rx="2" stroke="#006937" stroke-width="1.5"/>
+                            <path d="M7 2V18" stroke="#006937" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <path d="M13 2V18" stroke="#006937" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <path d="M2 7H18" stroke="#006937" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            <path d="M2 13H18" stroke="#006937" stroke-width="1.5" stroke-dasharray="2 2"/>
+                        </svg>
+                        Portfolio / Work Samples <span class="optional">(optional)</span>
+                    </h3>
+                    
+                    <div class="upload-area">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 10V30" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 20H30" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="upload-text">Drag & drop files or <span class="browse-text">browse</span></p>
+                        <p class="upload-hint">Supported: JPG, PNG, PDF, MP4 (max 10MB each)</p>
+                    </div>
+
+                    <div class="file-list">
+                        <div class="file-item">
+                            <div class="file-info">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <rect x="3" y="2" width="14" height="16" rx="2" stroke="#006937" stroke-width="1.5"/>
+                                    <path d="M7 6H13" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span class="file-name">logo-design-sample.jpg</span>
+                                <span class="file-size">2.4 MB</span>
+                            </div>
+                            <button class="file-remove">×</button>
+                        </div>
+                        <div class="file-item">
+                            <div class="file-info">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <rect x="3" y="2" width="14" height="16" rx="2" stroke="#006937" stroke-width="1.5"/>
+                                    <path d="M7 6H13" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span class="file-name">character-design.png</span>
+                                <span class="file-size">5.1 MB</span>
+                            </div>
+                            <button class="file-remove">×</button>
+                        </div>
+                        <div class="file-item">
+                            <div class="file-info">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <rect x="3" y="2" width="14" height="16" rx="2" stroke="#006937" stroke-width="1.5"/>
+                                    <path d="M7 6H13" stroke="#006937" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span class="file-name">portfolio.pdf</span>
+                                <span class="file-size">3.2 MB</span>
+                            </div>
+                            <button class="file-remove">×</button>
+                        </div>
+                    </div>
+                    
+                    <div class="file-counter">3/5 files uploaded</div>
+                </div>
+
+                <!-- Submit Section -->
+                <div class="form-section submit-section">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" checked>
+                            <span>I confirm this service follows DLSU guidelines</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox" checked>
+                            <span>I agree to the Terms of Service</span>
+                        </label>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-post" onclick="window.location.href='service-preview.html'">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M15 4L7 12L3 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Post Service
+                        </button>
+                        <button class="btn-cancel" onclick="window.location.href='profile.html'">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Tips -->
+            <div class="tips-sidebar">
+                <div class="tips-card">
+                    <h4 class="tips-title">💡 Tips for Getting Hired</h4>
+                    <ul class="tips-list">
+                        <li>Use a clear, descriptive title</li>
+                        <li>Showcase your best work in samples</li>
+                        <li>Be specific about what you offer</li>
+                        <li>Set a competitive starting price</li>
+                        <li>Highlight your DLSU background</li>
+                    </ul>
+                </div>
+
+                <div class="tips-card">
+                    <h4 class="tips-title">💰 Popular Price Ranges</h4>
+                    <div class="price-examples">
+                        <div class="price-example">
+                            <span class="price-cat">Visual Arts:</span>
+                            <span class="price-range">₱500 - ₱10,000</span>
+                        </div>
+                        <div class="price-example">
+                            <span class="price-cat">Academic Help:</span>
+                            <span class="price-range">₱300 - ₱5,000</span>
+                        </div>
+                        <div class="price-example">
+                            <span class="price-cat">Programming:</span>
+                            <span class="price-range">₱1,000 - ₱20,000</span>
+                        </div>
+                        <div class="price-example">
+                            <span class="price-cat">Video Editing:</span>
+                            <span class="price-range">₱800 - ₱8,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips-card">
+                    <h4 class="tips-title">🎓 DLSU Advantage</h4>
+                    <p class="tips-text">Mention your course and year in your description. Clients love hiring fellow Lasallians!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="../../images/logo.png" alt="Logo" class="footer-logo">
+                <div>
+                    <p class="footer-brand-name">Archer's Freelance Hub</p>
+                    <span class="badge">DLSU Exclusive</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="copyright">© 2026 Archer's Freelance Hub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
