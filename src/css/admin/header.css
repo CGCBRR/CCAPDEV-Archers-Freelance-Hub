@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-4) var(--space-10);
+    padding: var(--space-4) var(--space-8);
     background: var(--green-gradient);
     position: sticky;
     top: 0;
@@ -21,33 +21,46 @@
     width: 44px;
     height: 44px;
     border-radius: var(--radius-md);
-    object-fit: cover;
+    object-fit: contain;
+    margin: 0;
 }
 
 .brand-text {
     display: flex;
     flex-direction: column;
-    gap: var(--space-1);
 }
 
 .logo-text {
     font-size: 18px;
     font-weight: 700;
     color: var(--white);
+    line-height: 1.2;
 }
 
+.badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--green-dark);
+    border-radius: var(--radius-full);
+    width: fit-content;
+}
+
+/* Navigation */
 .header-nav {
     display: flex;
-    gap: var(--space-6);
+    gap: var(--space-8);
+    margin-left: var(--space-12);
 }
 
 .nav-link {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
+    transition: color 0.2s;
     padding: var(--space-2) 0;
-    transition: all 0.2s;
 }
 
 .nav-link:hover,
@@ -60,48 +73,63 @@
     border-bottom: 2px solid var(--white);
 }
 
+/* Header Right */
 .header-right {
     display: flex;
     align-items: center;
     gap: var(--space-4);
 }
 
-.notification-icon {
-    position: relative;
+.post-btn {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--white);
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: var(--radius-full);
     cursor: pointer;
+    transition: all 0.2s;
 }
 
-.notification-badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: var(--danger);
+.post-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.logout-btn {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--white);
-    font-size: 10px;
     font-weight: 600;
-    padding: 2px 5px;
+    font-size: 13px;
     border-radius: var(--radius-full);
-    min-width: 18px;
-    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
 
 .profile-icon {
     position: relative;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.profile-icon:hover {
-    transform: scale(1.05);
 }
 
 .profile-icon img {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--radius-circle);
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s;
+}
+
+.profile-icon img:hover {
+    transform: scale(1.05);
+    border-color: var(--white);
 }
 
 .online-indicator {
@@ -110,7 +138,7 @@
     right: 2px;
     width: 10px;
     height: 10px;
-    background: var(--success);
+    background: #10b981;
     border: 2px solid var(--green-dark);
     border-radius: var(--radius-circle);
 }

@@ -63,16 +63,6 @@ main {
     border-color: var(--green-primary);
 }
 
-.stat-icon {
-    width: 54px;
-    height: 54px;
-    background: var(--green-soft-bg);
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .stat-content {
     flex: 1;
 }

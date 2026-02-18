@@ -13,36 +13,28 @@
     <!-- HEADER -->
     <header class="header">
         <div class="header-left">
-            <img src="../../images/logo.png" alt="Archer's Freelance Hub" class="logo-img">
+            <img src="../../images/logo2.png" alt="Archer's Freelance Hub" class="logo-img">
             <div class="brand-text">
                 <h1 class="logo-text">Archer's Freelance Hub</h1>
-                <span class="badge admin-badge">Admin</span>
+                <span class="badge">DLSU Exclusive</span>
             </div>
         </div>
 
         <nav class="header-nav">
-            <a href="#" class="nav-link active">Dashboard</a>
-            <a href="#" class="nav-link">Users</a>
-            <a href="#" class="nav-link">Projects</a>
-            <a href="#" class="nav-link">Reports</a>
-            <a href="#" class="nav-link">Settings</a>
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="profile.html" class="nav-link">My Projects</a>
         </nav>
 
         <div class="header-right">
-            <div class="notification-icon">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M10 2C7.8 2 6 3.8 6 6V9C6 9.7 5.7 10.4 5.2 10.9L4.7 11.4C3.9 12.2 4.1 13.5 5.1 13.9C8.3 15.1 11.7 15.1 14.9 13.9C15.9 13.5 16.1 12.2 15.3 11.4L14.8 10.9C14.3 10.4 14 9.7 14 9V6C14 3.8 12.2 2 10 2Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
-                    <path d="M12 15C12 16.1 11.1 17 10 17C8.9 17 8 16.1 8 15" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
-                    <circle cx="17" cy="5" r="2.5" fill="#FF4444" stroke="white"/>
-                </svg>
-                <span class="notification-badge">3</span>
-            </div>
+            <button class="post-btn" onclick="window.location.href='post-service.html'">+ Post Services</button>
+            <button class="logout-btn" onclick="window.location.href='loginpage.html'">Log out</button>
             <div class="profile-icon" onclick="window.location.href='profile.html'" style="cursor: pointer;">
-                <img src="../../images/admin-avatar.jpg" alt="Admin">
+                <img src="../../images/profile.jpg" alt="Profile">
                 <span class="online-indicator"></span>
             </div>
         </div>
     </header>
+
 
     <main>
         <!-- PAGE TITLE -->
@@ -60,14 +52,6 @@
         <section class="stats-section">
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-icon users-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M17 21V19C17 16.8 15.2 15 13 15H5C2.8 15 1 16.8 1 19V21" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="9" cy="7" r="4" stroke="#006937" stroke-width="2"/>
-                            <path d="M23 21V19C22.9 16.9 21.4 15.2 19.4 15" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="18" cy="5" r="3" stroke="#006937" stroke-width="2"/>
-                        </svg>
-                    </div>
                     <div class="stat-content">
                         <span class="stat-label">Total Users</span>
                         <span class="stat-value">1,284</span>
@@ -76,14 +60,6 @@
                 </div>
 
                 <div class="stat-card">
-                    <div class="stat-icon projects-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="#006937" stroke-width="2"/>
-                            <path d="M8 2V6" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M16 2V6" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M2 10H22" stroke="#006937" stroke-width="2"/>
-                        </svg>
-                    </div>
                     <div class="stat-content">
                         <span class="stat-label">Total Projects</span>
                         <span class="stat-value">567</span>
@@ -92,13 +68,6 @@
                 </div>
 
                 <div class="stat-card">
-                    <div class="stat-icon revenue-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="10" stroke="#006937" stroke-width="2"/>
-                            <path d="M12 6V18" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M8 8H14C15.1 8 16 8.9 16 10C16 11.1 15.1 12 14 12H10C8.9 12 8 12.9 8 14C8 15.1 8.9 16 10 16H16" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
                     <div class="stat-content">
                         <span class="stat-label">Platform Revenue</span>
                         <span class="stat-value">₱45,280</span>
@@ -107,13 +76,6 @@
                 </div>
 
                 <div class="stat-card">
-                    <div class="stat-icon reports-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#006937" stroke-width="2"/>
-                            <path d="M12 8V12" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="12" cy="16" r="1" fill="#006937"/>
-                        </svg>
-                    </div>
                     <div class="stat-content">
                         <span class="stat-label">Pending Reports</span>
                         <span class="stat-value">23</span>
@@ -343,33 +305,10 @@
                     <h3>Quick Actions</h3>
                     <div class="actions-grid">
                         <button class="quick-action-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 5V19" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M5 12H19" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
                             <span>Add User</span>
                         </button>
                         <button class="quick-action-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#006937" stroke-width="2"/>
-                                <path d="M12 16V12" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                                <circle cx="12" cy="8" r="1" fill="#006937"/>
-                            </svg>
-                            <span>Create Announcement</span>
-                        </button>
-                        <button class="quick-action-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M20 12H4" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M12 4V20" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
                             <span>Add Category</span>
-                        </button>
-                        <button class="quick-action-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M22 6L12 13L2 6" stroke="#006937" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                            <span>Send Newsletter</span>
                         </button>
                     </div>
                 </div>
@@ -482,17 +421,14 @@
                 <img src="../../images/logo2.png" alt="Archer's Freelance Hub" class="footer-logo">
                 <div>
                     <p class="footer-brand-name">Archer's Freelance Hub</p>
-                    <span class="badge admin-badge">Admin Panel</span>
+                    <span class="badge">DLSU Exclusive</span>
                 </div>
             </div>
             <div class="footer-links">
-                <a href="#">Dashboard</a>
-                <a href="#">Users</a>
-                <a href="#">Projects</a>
-                <a href="#">Reports</a>
-                <a href="#">Settings</a>
+                <a href="contactpage.html">About</a>
+                <a href="contactpage.html#team-members">Contact</a>
             </div>
-            <p class="copyright">© 2026 Archer's Freelance Hub Admin Panel. All rights reserved.</p>
+            <p class="copyright">© 2026 Archer's Freelance Hub. All rights reserved.</p>
         </div>
     </footer>
 </body>
