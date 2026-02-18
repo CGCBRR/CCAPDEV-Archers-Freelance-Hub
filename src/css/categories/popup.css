@@ -98,17 +98,53 @@
 
 /* Freelancer Featured Works */
 .featworks-thumbnails {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: var(--space-3);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: var(--space-2); 
+    scrollbar-width: thin; 
+    scrollbar-color: var(--green-primary) var(--gray-200); 
 }
 
 .featworks-thumbnails img {
-    width: 100%;
+    max-width: 200px;
+    width: 90%;
     aspect-ratio: 12/9;
     object-fit: cover;
     border-radius: var(--radius-lg);
     transition: all var(--transition-fast);
+}
+
+.featworks-thumbnails:has(img:first-child:nth-last-child(3)) img {
+    flex: 1 0 0;
+}
+
+.featworks-thumbnails:has(img:first-child:nth-last-child(2)) img {
+    flex: 1 0 0;
+}
+
+.featworks-thumbnails:has(img:first-child:nth-last-child(1)) img {
+    flex: 1 0 0;
+}
+
+.featworks-thumbnails::-webkit-scrollbar {
+    height: 6px;
+}
+
+.featworks-thumbnails::-webkit-scrollbar-track {
+    background: var(--gray-200);
+    border-radius: var(--radius-full);
+}
+
+.featworks-thumbnails::-webkit-scrollbar-thumb {
+    background: var(--green-primary);
+    border-radius: var(--radius-full);
+}
+
+.featworks-thumbnails::-webkit-scrollbar-thumb:hover {
+    background: var(--green-dark);
 }
 
 .featworks-thumbnails img:hover {
