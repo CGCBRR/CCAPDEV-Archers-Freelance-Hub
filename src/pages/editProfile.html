@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/profile/main.css" />
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="header-left">
             <img src="../../images/logo2.png" alt="Archer's Freelance Hub" class="logo-img">
@@ -18,21 +19,17 @@
                 <span class="badge">DLSU Exclusive</span>
             </div>
         </div>
-        
+
         <nav class="header-nav">
-            <a href="homepage.html" class="nav-link">Home</a>
-            <a href="#" class="nav-link">Messages</a>
-            <a href="#" class="nav-link">Projects</a>
+            <a href="homepage.html" class="nav-link">Browse</a>
+            <a href="profile.html" class="nav-link active">My Projects</a>
         </nav>
 
         <div class="header-right">
-            <div class="search-wrapper">
-                <input type="text" placeholder="Search..." class="search-input">
-            </div>
-            <button class="post-btn">+ Post</button>
-            <button class="logout-btn">Log out</button>
-            <div class="profile-icon">
-                <img src="../../images/jb.jpg" alt="Profile">
+            <button class="post-btn" onclick="window.location.href='post-service.html'">+ Post Services</button>
+            <button class="logout-btn" onclick="window.location.href='loginpage.html'">Log out</button>
+            <div class="profile-icon" onclick="window.location.href='profile.html'" style="cursor: pointer;">
+                <img src="../../images/profile.jpg" alt="Profile">
                 <span class="online-indicator"></span>
             </div>
         </div>
