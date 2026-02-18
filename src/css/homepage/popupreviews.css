@@ -207,7 +207,7 @@
 }
 
 /* Pages */
-.reviews-pagination {
+.reviews-page {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -216,7 +216,7 @@
     margin-top: 16px;
 }
 
-.pagination-btn {
+.page-btn {
     min-width: 40px;
     height: 40px;
     display: flex;
@@ -232,23 +232,23 @@
     transition: all 0.2s ease;
 }
 
-.pagination-btn:hover {
+.page-btn:hover {
     background: var(--gray-50);
     border-color: rgba(0, 0, 0, 0.12);
 }
 
-.pagination-btn.active {
+.pagebtn.active {
     background: var(--green-primary);
     border-color: var(--green-primary);
     color: white;
 }
 
-.pagination-dots {
+.page-dots {
     color: var(--text-tertiary);
     padding: 0 4px;
 }
 
-.pagination-next {
+.page-next {
     padding: 0 16px;
     height: 40px;
     background: none;
@@ -262,7 +262,7 @@
     margin-left: 8px;
 }
 
-.pagination-next:hover {
+.page-next:hover {
     background: var(--gray-50);
     border-color: var(--green-primary);
     color: var(--green-primary);
@@ -289,188 +289,4 @@
 .write-review-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(34, 197, 94, 0.3);
-}
-
-/* ===================== RESPONSIVE DESIGN ===================== */
-
-/* Desktop Large (1200px - 1500px) */
-@media (max-width: 1500px) {
-    .popup {
-        max-width: 1300px;
-    }
-}
-
-/* Desktop (992px - 1199px) */
-@media (max-width: 1199px) {
-    .popup-content {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    
-    .popup-image-wrapper {
-        max-width: 100%;
-    }
-    
-    .popup-main-image {
-        max-height: 500px;
-    }
-}
-
-/* Tablet (768px - 991px) */
-@media (max-width: 991px) {
-    .popup {
-        width: 95%;
-        margin-top: 20px;
-    }
-    
-    .popup-content {
-        padding: 20px;
-    }
-    
-    .popup-header h2 {
-        font-size: 24px;
-    }
-    
-    .popup-price {
-        font-size: 28px;
-    }
-    
-    /* Reviews responsive */
-    .reviews-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .rating-badge-large {
-        width: 100%;
-        justify-content: space-between;
-    }
-    
-    .review-content-full {
-        padding-left: 0;
-    }
-    
-    .review-images {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Mobile Landscape (576px - 767px) */
-@media (max-width: 767px) {
-    .popup-reviews {
-        padding: 20px;
-    }
-    
-    .reviews-filter {
-        overflow-x: auto;
-        padding-bottom: 12px;
-        flex-wrap: nowrap;
-    }
-    
-    .filter-btn {
-        white-space: nowrap;
-    }
-    
-    .rating-badge-large {
-        flex-wrap: wrap;
-        padding: 16px;
-    }
-    
-    .review-user-full {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .user-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-    }
-    
-    .review-meta-full {
-        flex-direction: column;
-        gap: 4px;
-    }
-    
-    .review-project::before {
-        display: none;
-    }
-    
-    .review-project {
-        padding-left: 0;
-    }
-    
-    .review-images {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-    }
-    
-    .review-helpful {
-        flex-wrap: wrap;
-    }
-    
-    .reviews-pagination {
-        gap: 4px;
-    }
-    
-    .pagination-btn {
-        min-width: 36px;
-        height: 36px;
-        font-size: 13px;
-    }
-    
-    .write-review-btn {
-        max-width: 100%;
-    }
-}
-
-/* Mobile Portrait (320px - 575px) */
-@media (max-width: 575px) {
-    .popup-reviews {
-        padding: 16px;
-    }
-    
-    .header-left h4 {
-        font-size: 20px;
-    }
-    
-    .rating-number {
-        font-size: 28px;
-    }
-    
-    .rating-stars .star {
-        font-size: 18px;
-    }
-    
-    .rating-total {
-        font-size: 13px;
-    }
-    
-    .review-item-full {
-        padding: 16px;
-    }
-    
-    .user-avatar-large {
-        width: 48px;
-        height: 48px;
-    }
-    
-    .user-header h5 {
-        font-size: 16px;
-    }
-    
-    .review-text-full {
-        font-size: 14px;
-    }
-    
-    .pagination-btn {
-        min-width: 32px;
-        height: 32px;
-    }
-    
-    .pagination-next {
-        padding: 0 12px;
-        height: 32px;
-        font-size: 13px;
-    }
 }
