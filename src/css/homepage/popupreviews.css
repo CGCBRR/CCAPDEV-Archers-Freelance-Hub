@@ -307,6 +307,7 @@
 }
 
 .post-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: var(--shadow-green-hover);
+    color: var(--green-primary)
 }
