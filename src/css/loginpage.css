@@ -112,6 +112,10 @@ body {
     transition: 0.2s;
 }
 
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
 .toggle-password:hover {
     text-decoration: underline;
 }
