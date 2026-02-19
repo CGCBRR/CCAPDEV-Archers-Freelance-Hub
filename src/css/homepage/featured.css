@@ -144,14 +144,18 @@
 .portfolio-grid::-webkit-scrollbar-thumb {
     background: var(--green-primary);
     border-radius: var(--radius-full);
+    cursor: grab;
 }
 
 .portfolio-grid::-webkit-scrollbar-thumb:hover {
     background: var(--green-dark);
 }
 
+.portfolio-grid::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+
 .portfolio-grid img:hover {
-    transform: scale(1.05);
     box-shadow: var(--shadow-md);
 }
 
