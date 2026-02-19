@@ -183,29 +183,6 @@
     margin: 0;
 }
 
-/* Review Images */
-.review-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    max-width: 400px;
-}
-
-.review-images img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.review-images img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
 /* Pages */
 .reviews-page {
     display: flex;
@@ -268,25 +245,68 @@
     color: var(--green-primary);
 }
 
-/* Write Review Button */
-.write-review-btn {
-    padding: 16px;
-    background: var(--green-primary);
-    border: none;
-    border-radius: 40px;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 16px;
-    width: 100%;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+/* Write Review */
+.comment-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.write-review-btn:hover {
+.input-area {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4)
+}
+
+.form-textarea {
+    min-width: 1000px;
+    max-height: 50px;
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+}
+
+.form-textarea:hover {
+    border-color: var(--gray-400);
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--green-primary);
+    box-shadow: 0 0 0 4px var(--green-soft-bg);
+}
+
+.form-textarea::placeholder {
+    color: var(--gray-400);
+}
+
+.form-textarea::-webkit-scrollbar {
+    display: none;
+}
+
+/* Post Button */
+.post-btn-container {
+    align-items: baseline;
+}
+
+.post-btn {
+    min-width: 100px;
+    background: var(--green-gradient);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+    transition: all var(--transition-base);
+    margin-right: var(--space-4);
+}
+
+.post-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(34, 197, 94, 0.3);
+    box-shadow: var(--shadow-green-hover);
 }
